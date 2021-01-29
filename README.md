@@ -22,6 +22,9 @@ autologin-user=<user>
 autologin-user-timeout=0
 ...
 ```
+Nota : quand un utilisateur occasionnel utilisera l'autologin, le porte clé n'étant pas déverrouillé, lorsqu'il lancera certaines applications "à risque" (telle remmina), il aura une demande de mot de passe (voir keyring disable)
+
+
 # TODO tester : Liste au démarrage
 ```sh
 user@host:~$ sudo cat /etc/lightdm/lightdm.conf

@@ -11,13 +11,13 @@ user@host:~$ sudo cat /etc/lightdm/lightdm.conf
 greeter-setup-script=/path/to/script
 # AFTER login
 # session-setup-script=/path/to/script
+...
 ```
 
 # autologin
 ```sh
 user@host:~$ sudo cat /etc/lightdm/lightdm.conf
 [Seat:*]
-...
 autologin-user=<user>
 autologin-user-timeout=0
 ...

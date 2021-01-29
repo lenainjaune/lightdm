@@ -5,12 +5,12 @@ Tout ce qu'il faut savoir sur lightdm
 # Exécuter un script avant/après le login
 [Source](https://unix.stackexchange.com/questions/450835/how-to-execute-command-before-user-login-on-linux/450836#450836)
 ```sh
-user@host:~$ sudo cat /etc/lightdm/lightdm.conf.d/minidlna.conf 
+user@host:~$ sudo cat /etc/lightdm/lightdm.conf 
 [Seat:*]
 # BEFORE login
-greeter-setup-script=/data/scripts/run_minidlna.sh
+greeter-setup-script=/path/to/script
 # AFTER login
-# session-setup-script=/data/scripts/run_minidlna.sh
+# session-setup-script=/path/to/script
 ```
 
 # autologin

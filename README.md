@@ -10,7 +10,7 @@ user@host:~$ cat /etc/lightdm/lightdm.conf
 # BEFORE login
 greeter-setup-script=/path/to/script
 # AFTER login
-# session-setup-script=/path/to/script
+session-setup-script=/path/to/script
 ...
 ```
 

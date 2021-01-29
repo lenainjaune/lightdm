@@ -24,9 +24,8 @@ autologin-user-timeout=0
 ```
 Nota : quand un utilisateur occasionnel utilisera l'autologin, le porte clé n'étant pas déverrouillé, lorsqu'il lancera certaines applications "à risque" (telle remmina), il aura une demande de mot de passe (voir keyring disable)
 
-
 # Liste au démarrage
-Plus convivial (pas de login à se souvenir), moins sécurisé (on connaît déjà les noms associés aux logins)
+Plus convivial (pas de login à se souvenir), moins sécurisé (on connaît déjà les noms qui sont associés aux logins)
 ```sh
 user@host:~$ sudo cat /etc/lightdm/lightdm.conf
 [Seat:*]

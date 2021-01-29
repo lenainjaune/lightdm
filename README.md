@@ -13,12 +13,19 @@ greeter-setup-script=/data/scripts/run_minidlna.sh
 # session-setup-script=/data/scripts/run_minidlna.sh
 ```
 
-# Liste au démarrage + autologin
+# autologin
 ```sh
 user@host:~$ sudo cat /etc/lightdm/lightdm.conf
-[SeatDefaults]
-autologin-guest=false
-#autologin-user=<user>
+[Seat:*]
+...
+autologin-user=<user>
 autologin-user-timeout=0
-autologin-session=lightdm-autologin
+...
+```
+# TODO tester : Liste au démarrage
+```sh
+user@host:~$ sudo cat /etc/lightdm/lightdm.conf
+[Seat:*]
+greeter-hide-users=false
+...
 ```

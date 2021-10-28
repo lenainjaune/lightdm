@@ -13,6 +13,10 @@ greeter-setup-script=/path/to/script
 session-setup-script=/path/to/script
 ...
 ```
+Pour vérifier que le script s'exécute bien pendant l'ouverture de session :
+```sh
+user@host:~$ tail -f /var/log/lightdm/lightdm.log
+```
 
 # autologin
 ```sh

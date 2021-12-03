@@ -36,3 +36,13 @@ user@host:~$ cat /etc/lightdm/lightdm.conf
 greeter-hide-users=false
 ...
 ```
+
+# Numpad avant login
+```sh
+user@host:~$ apt install numlockx
+user@host:~$ cat /etc/lightdm/lightdm.conf
+[Seat:*]
+greeter-setup-script=/usr/bin/numlockx on
+...
+```
+Attention : ça ne concerne que le login et PAS après

@@ -38,6 +38,9 @@ greeter-hide-users=false
 ```
 
 # Numpad avant login
+[source](https://superuser.com/questions/1282192/debian-9-stretch-xfce4-possible-screen-lock-numlock-bug/1331883#1331883)
+
+Testé sous Debian Stretch, Buster, Bullseye avec succès !
 ```sh
 user@host:~$ apt install numlockx
 user@host:~$ cat /etc/lightdm/lightdm.conf

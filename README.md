@@ -18,10 +18,12 @@ Pour vérifier que le script s'exécute bien pendant l'ouverture de session :
 user@host:~$ tail -f /var/log/lightdm/lightdm.log
 ```
 
-# autologin
+# Autologin
 ```sh
 user@host:~$ cat /etc/lightdm/lightdm.conf
+...
 [Seat:*]
+...
 autologin-user=<user>
 autologin-user-timeout=0
 ...

@@ -51,3 +51,19 @@ greeter-setup-script=/usr/bin/numlockx on
 ...
 ```
 Attention : ça ne concerne que le login et PAS après
+
+# touchpad tapping enabled
+
+```sh
+cat << EOF > /etc/X11/xorg.conf.d/40-libinput.conf
+Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        MatchIsTouchpad "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+        Option "Tapping" "on"
+EndSection
+EOF
+```
+[source](https://wiki.debian.org/SynapticsTouchpad#Debian_9_.22Stretch.22)
+
